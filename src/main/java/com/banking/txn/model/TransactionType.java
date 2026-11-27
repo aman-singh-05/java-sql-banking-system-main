@@ -1,4 +1,7 @@
 package com.banking.txn.model;
 
-public class TransactionType {
+public enum TransactionType {
+    DEPOSIT,
+    WITHDRAWAL,
+    TRANSFER
 }

@@ -1,4 +1,9 @@
 package com.banking.txn.exception;
 
-public class InsufficientBalanceException {
+import com.banking.txn.model.TransactionStatus;
+
+public class InsufficientBalanceException extends BankingException {
+    public InsufficientBalanceException(String message) {
+        super(message, TransactionStatus.REJECTED, "INSUFFICIENT_BALANCE");
+    }
 }
